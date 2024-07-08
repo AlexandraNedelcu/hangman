@@ -1,0 +1,32 @@
+.keyboard-wrapper {
+    display: grid;
+    grid-template-columns: 75px 75px 75px 75px 75px 75px 75px 75px 75px;
+    gap: .5rem;
+}
+
+.keyboard-btn {
+    width: 100%;
+    border: 3px solid black;
+    background: none;
+    aspect-ratio: 1/1;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    padding: .5rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: black;
+}
+
+.keyboard-btn.active {
+    background-color: hsl(152, 97%, 38%);
+    color: white;
+}
+
+.keyboard-btn.inactive {
+    opacity: .3;
+}
+
+.keyboard-btn:hover:not(:disabled),
+.keyboard-btn:focus:not(:disabled) {
+    background-color: hsl(152, 96%, 44%);
+}
